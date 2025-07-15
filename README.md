@@ -17,5 +17,6 @@ A simple web application that displays a dynamic list of recipes. The data is st
 ## 📸 Screenshots
  <img width="1166" height="588" alt="image" src="https://github.com/user-attachments/assets/7649c400-7bcd-4434-b81a-22a445393b15" />
 
-
+## 🌐 Live Demo (Optional)
+https://jibyremesh.github.io/good-food-recipe/
 
