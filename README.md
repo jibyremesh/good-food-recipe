@@ -1,4 +1,4 @@
-# Live Recipe List 
+# Good Food Recipe - Live Recipe List 
 
 A simple web application that displays a dynamic list of recipes. The data is stored in a local JSON file and rendered in real-time using JavaScript.
 
