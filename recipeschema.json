@@ -1,0 +1,113 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Recipe Book",
+    "description": "Recipe data with title,ingredients,methods etc.",
+    "type": "object",
+    "properties": {
+        "recipes": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "author": {
+                            "type": "string"
+                        },
+                        "ratingStar": {
+                            "type": "integer"
+                        },
+                        "ratingCount": {
+                            "type": "integer"
+                        },
+                        "commentCount": {
+                            "type": "integer"
+                        },
+                        "prepTime": {
+                            "type": "string"
+                        },
+                        "cookTime": {
+                            "type": "string"
+                        },
+                        "effortLevel": {
+                            "type": "string"
+                        },
+                        "servingSize": {
+                            "type": "integer"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "imageUrl": {
+                            "type": "string"
+                        },
+                        "nutritionInfo": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "item": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "integer"
+                                        },
+                                        "unit": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "item",
+                                        "value",
+                                        "unit"
+                                    ]
+                                }
+                            ]
+                        },
+                        "ingredients": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "cookingSteps": {
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "title": {
+                                            "type": "string"
+                                        },
+                                        "text": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "title",
+                                        "text"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "title",
+                        "author",
+                        "prepTime",
+                        "effortLevel",
+                        "servingSize",
+                        "nutritionInfo",
+                        "ingredients",
+                        "cookingSteps"
+                    ]
+                }
+            ]
+        }
+    }
+}
